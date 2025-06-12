@@ -28,8 +28,4 @@ jobs:
       - name: Show Semgrep results
         run: cat semgrep-results.json
 
-      - name: Upload Semgrep report as artifact
-        uses: actions/upload-artifact@v2
-        with:
-          name: semgrep-report
-          path: semgrep-results.json
+  
